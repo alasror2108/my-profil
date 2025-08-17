@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Islami – Nuansa Kemerdekaan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-vertikal">
+
+  <!-- Header -->
+  <header>
+    <div class="angka-80-bg">80</div>
+    <div class="ornamen-bendera">
+      <img src="bendera.png" alt="Bendera Indonesia" class="bendera">
+      <div class="logo-80">
+        <span class="angka">80</span>
+        <span class="teks">DIRGAHAYU<br>INDONESIA</span>
+      </div>
+      <img src="bendera.png" alt="Bendera Indonesia" class="bendera">
+    </div>
+
+    <img src="abang ganteng.jpg" alt="Foto Profil" class="profile-img">
+    <h1>Muhammad Najwa Al Asror</h1>
+    <p class="kemerdekaan">🇮🇩 Dirgahayu Republik Indonesia – 17 Agustus 🇮🇩</p>
+  </header>
+
+  <!-- Perkenalan -->
+  <section class="perkenalan">
+    <h2>Perkenalan Diri</h2>
+    <p>Assalamu’alaikum! Perkenalkan saya Muhammad Najwa Al Asror, seorang santri yang memiliki hobi mengaji dan ngopi serta memiliki antusias dalam mencoba hal-hal baru.</p>
+  </section>
+
+  <!-- Data Diri -->
+  <section class="data-diri">
+    <h2>Data Diri</h2>
+    <ul>
+      <li><strong>Nama:</strong> Muhammad Najwa Al Asror</li>
+      <li><strong>Tempat, Tanggal Lahir:</strong> Batam, 21 Agustus 2006</li>
+      <li><strong>Alamat:</strong> Sadai, Bengkong, Batam</li>
+      <li><strong>Pendidikan:</strong> S1 Teknik Perkapalan</li>
+      <li><strong>Hobi:</strong> Membaca, mengaji, ngopi</li>
+    </ul>
+  </section>
+
+  <!-- Riwayat Pendidikan -->
+  <section class="pendidikan">
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+      <li>MI Tahfidzul Qur'an TBS, Kudus (2012 - 2019)</li>
+      <li>MTs Yanbu'ul Qur'an, Kudus (2019 - 2023)</li>
+      <li>MA Al Anwar 2, Rembang (2023 - 2025)</li>
+      <li>Politeknik Negeri Batam, Teknik Rekayasa Konstruksi Perkapalan (2025 - sekarang)</li>
+    </ul>
+  </section>
+
+  <!-- Riwayat Hidup -->
+  <section class="riwayat">
+    <h2>Riwayat Hidup</h2>
+    <ul>
+      <li>Menganggur (2025 - sekarang)</li>
+    </ul>
+  </section>
+
+  <!-- Galeri Aktivitas -->
+  <section class="aktivitas-galeri">
+    <div class="aktivitas-item">
+      <img src="fotoku.jpg" alt="Aktivitas 1">
+      <p><q>ojo seneng iclik</q></p>
+    </div>
+    <div class="aktivitas-item">
+      <img src="fotoku2.jpg" alt="Aktivitas 2">
+      <p>خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+    </div>
+    <div class="aktivitas-item">
+      <img src="fotoku3.jpg" alt="Aktivitas 3">
+      <p><q>Dalam keindahan alam, kita temukan tanda-tanda kebesaran-Nya yang tak terhingga.</q></p>
+    </div>
+    <div class="aktivitas-item">
+      <img src="fotoku4.jpg" alt="Aktivitas 4">
+      <p><q>Life is being together</q></p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="sosmed">
+    <h2>Kontak & Media Sosial</h2>
+    <p>Email: <a href="mailto:najwaalasror2108@gmail.com">najwaalasror2108@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6282231389181">+6282231389181</a></p>
+    <p>Instagram: <a href="https://instagram.com/alasror_21">@alasror_21</a></p>
+  </section>
+
+  <!-- Forum Diskusi -->
+  <section class="komentar">
+    <h2>Forum Diskusi</h2>
+    <input id="usernameInput" placeholder="Nama Anda..." />
+    <textarea id="commentInput" placeholder="Tulis komentar Anda..."></textarea>
+    <button onclick="addComment()">Kirim</button>
+    <div id="commentList"></div>
+  </section>
+
+  <!-- Musik -->
+  <audio id="bg-music" autoplay loop muted>
+    <source src="indonesia_pusaka.ogg" type="audio/ogg">
+    <source src="indonesia_pusaka.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" onclick="toggleMusic()">🔊</button>
+
+  <!-- Firebase SDK -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <script>
+   const firebaseConfig = {
+  apiKey: "AIzaSyAwnEIEOiINYF-vemIQ1BexuehzGjhQLfU",
+  authDomain: "kolom-diskusi.firebaseapp.com",
+  projectId: "kolom-diskusi",
+  storageBucket: "kolom-diskusi.firebasestorage.app",
+  messagingSenderId: "663206159970",
+  appId: "1:663206159970:web:41eced056e4d658bab933b",
+  measurementId: "G-63FNZJRYQF"
+};
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
