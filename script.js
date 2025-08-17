@@ -99,3 +99,12 @@ function toggleMusic() {
     btn.textContent = "🔇";
   }
 }
+// ▶️ Auto aktif setelah klik pertama di halaman
+document.addEventListener("click", () => {
+  const music = document.getElementById("bg-music");
+  if (music.muted || music.paused) {
+    music.muted = false;
+    music.play();
+    document.getElementById("musicToggle").textContent = "🔊";
+  }
+}, { once: true }); // sekali aja, biar gak spam play
