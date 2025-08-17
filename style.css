@@ -232,3 +232,20 @@ section h2 { color: #d00000; }
     max-width: 250px;  /* supaya pas di layar kecil */
   }
 }
+@media (max-width: 600px) {
+  .aktivitas-galeri {
+    gap: 15px; /* jarak antar item lebih rapat di HP */
+  }
+
+  .aktivitas-item {
+    flex-direction: column !important; /* gambar atas, teks bawah */
+    align-items: center;               /* biar rata tengah */
+    text-align: center;
+  }
+
+  .aktivitas-item img {
+    width: 100%;        /* full lebar */
+    max-width: 250px;   /* tapi tidak terlalu besar */
+    height: auto;       /* biar proporsional */
+  }
+}
