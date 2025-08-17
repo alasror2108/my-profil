@@ -221,3 +221,14 @@ section h2 { color: #d00000; }
         margin-left: 10px; /* indent lebih kecil di HP */
     }
 }
+@media (max-width: 600px) {
+  .aktivitas-item {
+    flex-direction: column !important; /* gambar atas, teks bawah */
+    text-align: center;
+  }
+
+  .aktivitas-item img {
+    width: 100%;       /* biar responsif */
+    max-width: 250px;  /* supaya pas di layar kecil */
+  }
+}
